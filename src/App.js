@@ -33,7 +33,7 @@ function App() {
   const handleClicked=(id)=>{
     let newTodos=[...todos]
     let myTodo=newTodos.find(todo=>todo.id === id);
-    myTodo.completed=true;
+    myTodo.completed=!myTodo.completed;
     setTodos(newTodos);
   }
 
